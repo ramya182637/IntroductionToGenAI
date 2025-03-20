@@ -4,7 +4,7 @@ from huggingface_hub import InferenceClient
 # Initialize the AI model client
 ai_client = InferenceClient(
     model="mistralai/Mistral-Nemo-Instruct-2407",
-    token="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"  # API token (removed for security purposes)
+    token=""  # API token (removed for security purposes)
 )
 
 print("Type your message to start chatting with the AI. Type 'exit' or 'quit' to end the conversation. Enjoy!")
