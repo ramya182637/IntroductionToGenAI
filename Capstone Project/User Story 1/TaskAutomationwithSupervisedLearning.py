@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 # Step 1: Loading the dataset
-data_frame = pd.read_csv('C:/Users/AVuser/Desktop/Genspark Assignments/Introduction to GenAI/Capstone Project/User Story 1/students_data.csv')
+data_frame = pd.read_csv('students_data.csv') #If doing in the local need to give the absolute path eg  c:/users// 
 
 # Step 2: Creating a new target variable 'outcome' for classification (Pass if G3 >= 8, else Fail)
 data_frame['outcome'] = ['Pass' if score >= 8 else 'Fail' for score in data_frame['G3']]

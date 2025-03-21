@@ -7,7 +7,7 @@ import seaborn as sns
 from sklearn.decomposition import PCA
 
 # Load the dataset
-data = pd.read_csv("students_data.csv")
+data = pd.read_csv("students_data.csv") # if doing in the local then give absolute path like c://users/...
 
 # Selecting relevant columns for clustering (numerical features)
 features = data[["studytime", "freetime", "goout", "absences", "G3", "failures", "G1", "G2"]]
